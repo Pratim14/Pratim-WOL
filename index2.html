@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Quiz Page</title>
+</head>
+<body>
+    <form id="Quiz" name="Quiz">
+    <h2>
+      Here is your quiz!! 
+    </h2>
+    <p> Question 1</p>
+    <p>Which of the following is used for Database Management</p>
+    <input type="radio" id="mc" name="question1" value="SQL">SQL<br>
+    <input type="radio" id="mc" name="question1" value="Ruby">Ruby<br>
+    <input type="radio" id="mc" name="question1" value="Java">Java<br>
+
+    <p> Question 2 </p>
+    <p>Did the Apple iPhone first become available in ?</p>
+    <input type="radio" id="mc" name="question2" value="2005">2005<br>
+    <input type="radio" id="mc" name="question2" value="2006">2006<br>
+    <input type="radio" id="mc" name="question2" value="2007">2007<br>
+
+    <p> Question 3</p>
+    <p>The technologically advanced humanoid robot ASIMO is made by which car company? </p>
+    <input type="radio" id="mc" name="question3" value="Tesla">Tesla<br>
+    <input type="radio" id="mc" name="question3" value="Honda">Honda<br>
+    <input type="radio" id="mc" name="question3" value="Toyota">Toyota<br>
+
+    <input id="button" type="button" value="Smash it" onclick=check()>
+  </form>
+  <div id = "after_submit">
+    <p id = "number_correct"></p>
+    <p id = "message"></p>
+    <img id = "picture">
+    </div>
+    
+</body>
+</html>
