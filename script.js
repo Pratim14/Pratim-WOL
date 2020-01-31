@@ -48,7 +48,7 @@ function onclick(){
 var question1=document.quiz.question1.value;
 var question1=document.quiz.question2.value;
 var question1=document.quiz.question3.value;
-var corr=0;
+var correct=0;
   if(question1=="SQL"){
     correct+=50;
   }

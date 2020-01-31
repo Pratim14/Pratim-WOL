@@ -1,32 +1,48 @@
 <html>
     <head>
         <title>Quiz Page</title>
+        <link rel="stylesheet" href="stylesheet1.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 </head>
 <body>
     <form id="Quiz" name="Quiz">
+      <div class="form-group">
+
     <h2>
       Here is your quiz!! 
     </h2>
     <p> Question 1</p>
-    <p>Which of the following is used for Database Management</p>
-    <input type="radio" id="mc" name="question1" value="SQL">SQL<br>
-    <input type="radio" id="mc" name="question1" value="Ruby">Ruby<br>
-    <input type="radio" id="mc" name="question1" value="Java">Java<br>
-
+    
+    <div class="form-check">
+      <p>Which of the following is used for Database Management</p>
+      <input class="form-check-input" type="radio" id="mc" name="question1" value="SQL">SQL<br>
+      <input class="form-check-input" type="radio" id="mc" name="question1" value="Ruby">Ruby<br>
+      <input class="form-check-input" type="radio" id="mc" name="question1" value="Java">Java<br>
+    </div>
     <p> Question 2 </p>
+    <div class="form-check">
     <p>Did the Apple iPhone first become available in ?</p>
-    <input type="radio" id="mc" name="question2" value="2005">2005<br>
-    <input type="radio" id="mc" name="question2" value="2006">2006<br>
-    <input type="radio" id="mc" name="question2" value="2007">2007<br>
-
+    
+    <input class="form-check-input" type="radio" id="mc" name="question2" value="2005">2005<br>
+    <input class="form-check-input" type="radio" id="mc" name="question2" value="2006">2006<br>
+    <input class="form-check-input" type="radio" id="mc" name="question2" value="2007">2007<br>
+    </div>
     <p> Question 3</p>
+    <div class="form-check">
     <p>The technologically advanced humanoid robot ASIMO is made by which car company? </p>
-    <input type="radio" id="mc" name="question3" value="Tesla">Tesla<br>
-    <input type="radio" id="mc" name="question3" value="Honda">Honda<br>
-    <input type="radio" id="mc" name="question3" value="Toyota">Toyota<br>
 
+    <input class="form-check-input" type="radio" id="mc" name="question3" value="Tesla">Tesla<br>
+    <input class="form-check-input" type="radio" id="mc" name="question3" value="Honda">Honda<br>
+    <input class="form-check-input" type="radio" id="mc" name="question3" value="Toyota">Toyota<br>
+    </div>
     <input id="button" type="button" value="Smash it" onclick=check()>
+    </div>
   </form>
+
   <div id = "after_submit">
     <p id = "number_correct"></p>
     <p id = "message"></p>
